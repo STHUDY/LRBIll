@@ -8,6 +8,7 @@ PHP:7.4以上(支持8.2)
 
 是本网站作者独立编写，是一款简洁记账网站。
 
+![image](https://github.com/STHUDY/LRBIll/assets/88417600/5099f2b5-f717-4bc2-b40b-14798c2ba9f2)
 
 # 功能介绍
 1.支持多用户
