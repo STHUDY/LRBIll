@@ -1,0 +1,29 @@
+<div class="w-100 h-min-100 p-3 d-flex">
+    <div class="w-100 d-flex align-items-center justify-content-center">
+        <form method="post" action="./Core/User/Login.php" id="userLogForm" target="formSubmit"
+            class="form-control border-0 shadow w-wms-100 d-flex align-items-center flex-column pb-5 pt-5"
+            style="--widthSet:576px">
+            <h1><i class="bi bi-person"></i></h1>
+            <h2>用户登录</h2>
+            <div class="mb-3 row w-75">
+                <label for="userRegForm" class="col-sm-3 col-form-label">账号：</label>
+                <div class="col-sm-9">
+                    <input type="text" name="userID" class="form-control" id="userRegUserID">
+                </div>
+            </div>
+            <div class="mb-3 row w-75">
+                <label for="userRegUserID" class="col-sm-3 col-form-label">密码：</label>
+                <div class="col-sm-9">
+                    <input type="password" name="passWord" class="form-control" id="userRegPassWord">
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-dark me-3" type="submit" onclick="ShowUserTips(1)">登录</button>
+                <button class="btn btn-outline-dark" onclick="document.getElementById('userRegForm').reset()"
+                    type="button">清空</button>
+            </div>
+            <br>
+            <small>没有账号？<a href="javaScript:void(0)" onclick="LoadPage('UserReg', topBillClick())">点击注册</a></small>
+        </form>
+    </div>
+</div>

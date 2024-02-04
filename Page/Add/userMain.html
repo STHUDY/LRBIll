@@ -1,0 +1,54 @@
+<div class="w-100 h-min-100 p-3 d-flex">
+    <div class="w-100 d-flex align-items-center justify-content-center">
+        <form method="post" action="./Core/Bill/add.php" id="billForm" target="formSubmit"
+            class="form-control border-0 shadow w-wms-100 d-flex align-items-center flex-column pb-5 pt-5"
+            style="--widthSet:576px">
+            <h1>记录账单</h1>
+            <div class="mb-3 row w-75">
+                <label for="billMoney" class="col-sm-3 col-form-label">金额：</label>
+                <div class="col-sm-9 d-flex">
+                    <input type="number" name="money" step = "0.01" class="form-control" id="billMoney">
+                    <div style="width: 10rem;" class="ms-2">
+                        <select class="form-select" name="type" onchange="ShowTime(this)">
+                            <option selected value="0">支出</option>
+                            <option value="1">收入</option>
+                            <option value="2">贷款</option>
+                            <option value="3">放贷</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 row w-75">
+                <label for="billValue" class="col-sm-3 col-form-label">详细：</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" name="value" id="billValue" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="mb-3 row w-75">
+                <label for="billName" class="col-sm-3 col-form-label">类型：</label>
+                <div class="col-sm-9">
+                    <input type="text" name="name" class="form-control" id="billName">
+                </div>
+            </div>
+            <div class="mb-3 row w-75" id="startTime" style="display: none;">
+                <label for="billLiabilities" class="col-sm-3 col-form-label">起始时间</label>
+                <div class="col-sm-9">
+                    <input type="date" name="startTime" class="form-control" id="billLiabilities">
+                </div>
+            </div>
+            <div class="mb-3 row w-75" id="endTime" style="display: none;">
+                <label for="billLending" class="col-sm-3 col-form-label">截止时间</label>
+                <div class="col-sm-9">
+                    <input type="date" name="endTime" class="form-control" id="billLending">
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-dark me-3" type="submit" onclick="ShowAddTips()">保存</button>
+                <button class="btn btn-outline-dark" onclick="document.getElementById('billForm').reset()"
+                    type="button">清空</button>
+            </div>
+            <br>
+            <small>金额输入正数是收入，负数是支出</small>
+        </form>
+    </div>
+</div>

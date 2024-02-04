@@ -1,0 +1,13 @@
+.eject {
+    animation-name: ejectSet;
+    animation-duration: 0.3s;
+}
+
+@keyframes ejectSet {
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

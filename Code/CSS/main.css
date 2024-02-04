@@ -1,0 +1,32 @@
+.w-wms-100 {
+    width: var(--widthSet);
+}
+
+.h-min-100 {
+    min-height: 100%;
+}
+
+.display-none-wms {
+    display: var(--displayShow);
+}
+
+.height-line {
+    padding: .05rem;
+    background-color: black;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.font-12-wms {
+    font-size: var(--SetFontSize);
+}
+
+.mw-wms-100{
+    max-width: var(--maxWidthSet);
+}
+
+.mh-wms-auto{
+    max-height: var(--maxHeightSet);
+}

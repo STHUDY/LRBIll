@@ -1,0 +1,36 @@
+<div class="w-100 h-min-100 p-3 d-flex">
+    <div class="w-100 d-flex align-items-center justify-content-center">
+        <form method="post" action="./Core/User/Register.php" id="userRegForm" target="formSubmit"
+            class="form-control border-0 shadow w-wms-100 d-flex align-items-center flex-column pb-5 pt-5"
+            style="--widthSet:576px">
+            <h1><i class="bi bi-person-add"></i></h1>
+            <h2>用户注册</h2>
+            <div class="mb-3 row w-75">
+                <label for="UserRegUserID" class="col-sm-3 col-form-label">账号：</label>
+                <div class="col-sm-9">
+                    <input type="text" name="userID" class="form-control" id="UserRegUserID">
+                </div>
+            </div>
+            <div class="mb-3 row w-75">
+                <label for="userRegPassword" class="col-sm-3 col-form-label">密码：</label>
+                <div class="col-sm-9">
+                    <input type="password" name="passWord" class="form-control" id="userRegPassword">
+                </div>
+            </div>
+            <div class="mb-3 row w-75">
+                <label for="userRegSurePassword" class="col-sm-3 col-form-label d-flex align-items-center"
+                    style="font-size: 12px;">确认密码：</label>
+                <div class="col-sm-9">
+                    <input type="password" name="surePassword" class="form-control" id="userRegSurePassword">
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-outline-dark me-3" type="submit" onclick="ShowUserTips(0)">注册</button>
+                <button class="btn btn-outline-dark" onclick="document.getElementById('userRegForm').reset()"
+                    type="button">清空</button>
+            </div>
+            <br>
+            <small>已有账号？<a href="javaScript:void(0)" onclick="LoadPage('UserLog', topBillClick())">点击登录</a></small>
+        </form>
+    </div>
+</div>

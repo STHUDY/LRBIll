@@ -1,0 +1,117 @@
+@media (max-width: 576px) {
+    .w-wms-100 {
+        width: 100% !important;
+    }
+
+    .display-none-wms {
+        display: none;
+    }
+
+    .font-12-wms {
+        font-size: 12px;
+    }
+
+    .mw-wms-100 {
+        max-width: 100%;
+    }
+
+    .mh-wms-auto {
+        max-height: none;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .bg-light {
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    }
+
+    #topUser,
+    #topUser,
+    .navbar-brand,
+    .nav-link,
+    #Main,
+    .offcanvas-title,
+    .form-select,
+    .btn-outline-dark,
+    .btn,
+    #addSaveState,
+    #loadDate {
+        color: white;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link,
+    .navbar-brand:focus,
+    .navbar-brand:hover,
+    .nav-link:focus,
+    .nav-link:hover,
+    .form-control {
+        color: rgb(222, 222, 222);
+    }
+
+    .navbar-toggler {
+        filter: brightness(10);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #Main,
+    .offcanvas,
+    .card,
+    .form-select,
+    .form-control {
+        background-color: #16181a;
+    }
+
+    .form-select,
+    .form-control,
+    .btn-outline-secondary {
+        border-color: #383d43 !important;
+    }
+
+    .table {
+        color: #ededed;
+        --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+        --bs-table-hover-bg: rgb(255 255 255 / 8%);
+        --bs-table-hover-color: #ffffff;
+    }
+
+    .text-black-50 {
+        color: rgb(255 255 255 / 50%) !important;
+    }
+
+    .form-control:focus {
+        color: white;
+        background-color: #202326;
+        border-color: #202326;
+        box-shadow: 0 0 0 .25rem rgba(16, 16, 16, 0.25)
+    }
+
+    .btn-outline-dark {
+        border-color: white;
+    }
+
+    .btn-outline-dark:hover {
+        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25)
+    }
+
+    .btn-close {
+        --bs-btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 white;
+    }
+
+    .shadow,
+    .shadow-lg {
+        box-shadow: 0 0.5rem 1rem black !important;
+    }
+
+    .text-muted {
+        color: hwb(211 71% 15% / 0.75) !important;
+    }
+
+    .height-line {
+        background-color: #f7f7f7;
+    }
+}

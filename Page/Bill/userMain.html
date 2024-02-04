@@ -1,0 +1,69 @@
+<div class="w-100 h-min-100 p-3 d-flex">
+    <div class="w-100 d-flex flex-column">
+        <div class="card shadow w-100 border-0 h-auto mb-3">
+            <div class="card-body">
+                <div class="d-flex flex-sm-row flex-column">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入搜索内容" id="searchText"
+                            aria-label="请输入搜索内容" aria-describedby="searchButton">
+                        <button class="btn btn-outline-secondary" type="button" id="searchButton"
+                            onclick="SearchBill()"><i class="bi bi-search me-2"></i>搜索</button>
+                    </div>
+                    <div class="d-flex mt-sm-0 mt-2 justify-content-between w-wms-100" style="--widthSet:auto">
+                        <div class="d-flex">
+                            <div style="width: 6.5rem;" class="ms-sm-2 d-flex">
+                                <select class="form-select" onchange="SearchBill()" id="billYearTime">
+                                    <option value="-1">----</option>
+                                </select>
+                            </div>
+                            <div style="width: 5.5rem;" class="ms-2">
+                                <select class="form-select" onchange="SearchBill()" id="billMouthTime">
+                                    <option value="-1">--</option>
+                                    <option value="01">1月</option>
+                                    <option value="02">2月</option>
+                                    <option value="03">3月</option>
+                                    <option value="04">4月</option>
+                                    <option value="05">5月</option>
+                                    <option value="06">6月</option>
+                                    <option value="07">7月</option>
+                                    <option value="08">8月</option>
+                                    <option value="09">9月</option>
+                                    <option value="10">10月</option>
+                                    <option value="11">11月</option>
+                                    <option value="12">12月</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="width: 7rem;" class="ms-2">
+                            <select class="form-select" onchange="SearchBill()" id="billType">
+                                <option selected value="0">账单</option>
+                                <option value="1">贷款</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card shadow w-100 border-0 h-100">
+            <div class="card-body">
+                <table class="table table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">金额</th>
+                            <th scope="col" class="display-none-wms" style="--displayShow:table-cell">详情</th>
+                            <th scope="col">分类</th>
+                            <th scope="col">类型</th>
+                            <th scope="col" class="display-none-wms" style="--displayShow:table-cell">时间</th>
+                        </tr>
+                    </thead>
+                    <tbody id="billTable">
+                        <!--数据列表-->
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-link text-muted" onclick="LoadMoreBill()">加载更多</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
